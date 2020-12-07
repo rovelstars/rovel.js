@@ -1,0 +1,21 @@
+{
+  "name": "rovel.js",
+  "version": "1.0.0",
+  "description": "The API everyone wanted!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -v && npm -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "keywords": [
+    "rovel",
+    "js",
+    "api",
+    "stars"
+  ],
+  "author": "Rovel Stars",
+  "license": "UNLICENSED"
+}
