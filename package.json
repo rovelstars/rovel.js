@@ -1,6 +1,6 @@
 {
   "name": "rovel.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The API everyone wanted!",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,9 @@
     "stars"
   ],
   "author": "Rovel Stars",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "shelljs": "^0.8.4"
+  }
 }
