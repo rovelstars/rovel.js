@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const rovelos = require('shelljs');
+const { exec } = require('child_process');
 const baseurl = "https://rovelapi.glitch.me";
 
 function guildstats(botid, key, guild) {
@@ -18,6 +18,6 @@ async function base() {
 	return await fetch(baseurl).then(res => res.text())
 	};
 function rovelexec(msg) {
-	rovelos.exec(msg);
+	exec(msg);
 }
 module.exports = {guildstats, chat, base, rovelexec};

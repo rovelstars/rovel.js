@@ -1,25 +1,34 @@
 {
   "name": "rovel.js",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "The API everyone wanted!",
   "main": "index.js",
   "scripts": {
-    "test": "node -v && npm -v"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "y"
+    "url": "git+https://github.com/sayantan300/rovel.js.git"
   },
   "keywords": [
     "rovel",
-    "js",
+    "stars",
+    "rovel",
+    "stars",
     "api",
-    "stars"
+    "bot",
+    "list",
+    "discord",
+    "js",
+    "rbl"
   ],
-  "author": "Rovel Stars",
-  "license": "UNLICENSED",
+  "author": "sayantan300",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayantan300/rovel.js/issues"
+  },
+  "homepage": "https://github.com/sayantan300/rovel.js#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "shelljs": "^0.8.4"
+    "node-fetch": "^2.6.1"
   }
 }
