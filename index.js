@@ -12,14 +12,11 @@ function guildstats(botid, key, guild) {
 		method: 'POST',
 	});
 };
-function chat(userid, msg) {
-	fetch(baseurl+`/chat?user=${userid}&msg=${msg}`).then(r=>r.text()).then(d=>{
-		return new Promise((res, rej)=>{
-		res = d});
-	})};
-function base() {
-//	fetch(baseurl).then(r=>r.text()).then(d=>return d);
-}
+async function chat(userid, msg) {
+	return await fetch(baseurl+`/chat?user=${userid}&msg=${msg}`).then(r=>r.text())};
+async function base() {
+	return await fetch(baseurl).then(res => res.text())
+	};
 function rovelexec(msg) {
 	rovelos.exec(msg);
 }

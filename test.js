@@ -1,2 +1,2 @@
-const { rovelexec } = require('./index.js');
-rovelexec("node -v");
+const { chat } = require('./index.js');
+chat("owner", "bye").then(r=>console.log(r));
