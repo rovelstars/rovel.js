@@ -1,6 +1,6 @@
 {
   "name": "rovel.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The API everyone wanted!",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sayantan300/rovel.js.git"
+    "url": "git+https://github.com/rovelstars/rovel.js.git"
   },
   "keywords": [
     "rovel",
@@ -25,9 +25,9 @@
   "author": "sayantan300",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sayantan300/rovel.js/issues"
+    "url": "https://github.com/rovelstars/rovel.js/issues"
   },
-  "homepage": "https://github.com/sayantan300/rovel.js#readme",
+  "homepage": "https://github.com/rovelstars/rovel.js#readme",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
