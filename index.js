@@ -1,15 +1,15 @@
-const fetch = require('node-fetch')
-const { exec } = require('child_process')
+const fetch = require("node-fetch")
+const { exec } = require("child_process")
 const baseurl = "https://rovelapi.glitch.me"
 
 function guildstats(botid, key, guild) {
 	fetch(`https://bots.rovelstars.ga/api/v1/bots/${botid}/stats`, {
 		body: JSON.stringify({ guildCount: guild }),
 		headers: {
-			'Authorization': key,
-			'Content-Type': 'application/json'
+			"Authorization": key,
+			"Content-Type": "application/json"
 		},
-		method: 'POST',
+		method: "POST",
 	})
 }
 async function chat(userid, msg) {
