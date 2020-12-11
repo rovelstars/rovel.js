@@ -1,9 +1,13 @@
 const fetch = require("node-fetch")
 const { exec } = require("child_process")
 const baseurl = "https://rovelapi.glitch.me"
+const text = require("./extra/ansi-colors/index.js")
+const command = require("./extra/commander.js/index.js")
+const htp = require("http")
+const fs = require("fs")
 
 function guildstats(botid, key, guild) {
-        fetch(`https://bots.rovelstars.ga/api/v1/bots/${botid}/stats`, {
+        fetch(`https://dbots.co/api/v1/bots/${botid}/stats`, {
                 body: JSON.stringify({ guildCount: guild }),
                 headers: {
                         "Authorization": key,
@@ -20,4 +24,44 @@ async function base() {
 function rovelexec(msg) {
         exec(msg)
 }
-module.exports = { guildstats, chat, base, rovelexec }
+function download(url, dest) {
+	if(url.startsWith("https")){
+		http = require("https")
+	}
+    return new Promise((resolve, reject) => {
+        const file = fs.createWriteStream(dest, { flags: "wx" })
+
+        const request = http.get(url, response => {
+            if (response.statusCode === 200) {
+                response.pipe(file)
+            } else {
+                file.close()
+                fs.unlink(dest, () => {}); // Delete temp file
+                reject(`Server responded with ${response.statusCode}: ${response.statusMessage}`)
+            }
+        });
+
+        request.on("error", err => {
+            file.close()
+            fs.unlink(dest, () => {}) // Delete temp file
+            reject(err.message)
+        });
+
+        file.on("finish", () => {
+            resolve()
+        });
+
+        file.on("error", err => {
+            file.close()
+
+            if (err.code === "EEXIST") {
+                reject("File already exists");
+            } else {
+                fs.unlink(dest, () => {}); // Delete temp file
+                reject(err.message)
+            }
+        })
+    })
+}
+
+module.exports = { guildstats, chat, base, rovelexec, text, command, download }
