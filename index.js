@@ -1,10 +1,11 @@
-const fetch = require("node-fetch")
+const fetch = require("./extra/node-fetch/lib/index.js")
 const { exec } = require("child_process")
 const baseurl = "https://rovelapi.glitch.me"
 const text = require("./extra/ansi-colors/index.js")
 const command = require("./extra/commander.js/index.js")
 const htp = require("http")
 const fs = require("fs")
+const matcher = require("./extra/did-you-mean")
 
 function guildstats(botid, key, guild) {
         fetch(`https://dbots.co/api/v1/bots/${botid}/stats`, {
@@ -64,4 +65,4 @@ function download(url, dest) {
     })
 }
 
-module.exports = { guildstats, chat, base, rovelexec, text, command, download }
+module.exports = { guildstats, chat, base, rovelexec, text, command, download, matcher }
