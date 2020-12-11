@@ -1,6 +1,6 @@
 {
   "name": "rovel.js",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "The API everyone wanted!",
   "main": "index.js",
   "scripts": {
