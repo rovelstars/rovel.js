@@ -1,11 +1,31 @@
+#!/usr/bin/env node
+
 const fetch = require("./extra/node-fetch/lib/index.js")
-const { exec } = require("child_process")
+const { exec, child } = require("child_process")
 const baseurl = "https://rovelapi.glitch.me"
 const text = require("./extra/ansi-colors/index.js")
 const command = require("./extra/commander.js/index.js")
 const htp = require("http")
 const fs = require("fs")
 const matcher = require("./extra/did-you-mean")
+const npm = require("./extra/api-npm/api.js")
+const prettynum = require("./extra/approx/index.js")
+const emoji = require("./extra/node-emoji");
+
+if(process.argv.includes("install")){
+	let arg = process.argv.join(" ");
+	arg = arg.split("install ");
+	if(arg[0].includes("install")){
+		console.log("Please provide a package's name on npm that we have to install.");
+		return;
+	}
+	
+}
+
+if(process.argv.includes("--test")){
+	console.log(text.green.bold("Successfully Working"));
+	return;
+}
 
 function guildstats(botid, key, guild) {
         fetch(`https://dbots.co/api/v1/bots/${botid}/stats`, {
@@ -65,4 +85,4 @@ function download(url, dest) {
     })
 }
 
-module.exports = { guildstats, chat, base, rovelexec, text, command, download, matcher }
+module.exports = { guildstats, chat, base, rovelexec, text, command, download, matcher, npm, prettynum, emoji }

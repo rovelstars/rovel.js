@@ -1,9 +1,11 @@
 {
   "name": "rovel.js",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "The collection of best stuff & APIs you will love!",
   "main": "index.js",
   "scripts": {
+    "prepublish": "git add . && npm run github",
+    "github": "git commit && git push",
     "test": "node test.js"
   },
   "repository": {
@@ -13,8 +15,14 @@
   "keywords": [
     "rovel",
     "stars",
-    "rovel",
-    "stars",
+    "roveljs",
+    "terminal",
+    "term",
+    "color",
+    "colour",
+    "text",
+    "style",
+    "awesome",
     "api",
     "bot",
     "list",
@@ -24,6 +32,14 @@
     "api",
     "fetch",
     "node",
+    "npm",
+    "download",
+    "many",
+    "functions",
+    "lodash",
+    "exec",
+    "shelljs",
+    ".js",
     "chalk",
     "terminal",
     "commander",
@@ -35,7 +51,7 @@
     "features"
   ],
   "author": "rovelstars",
-  "license": "AGPLV3",
+  "license": "AGPL-1.0-or-later",
   "bugs": {
     "url": "https://github.com/rovelstars/rovel.js/issues"
   },
