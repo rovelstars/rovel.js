@@ -18,7 +18,7 @@ But its recommended to install it locally in your project if you are in producti
 The NPM package all wanted. Docs are currently in progress, please join our discord server if you want to help us with creatung docs and helping with more stuff!
  If you are eager to know what does rovel.js does, kindly join the discord server and ask us.
 
- Updates in **1.1.1** :
+ Updates in **1.1.0** :
  - Added api querying for npm packages!
  - Added Number Approxer, like converting 1000 into 1k
  - Added Lodash like functions, and I give credits to lodash for creating those!

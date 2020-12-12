@@ -4,7 +4,6 @@
   "description": "The collection of best stuff & APIs you will love!",
   "main": "index.js",
   "scripts": {
-    "prepublish": "git add . && npm run github",
     "github": "git commit && git push",
     "test": "node test.js"
   },
