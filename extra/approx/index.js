@@ -27,12 +27,12 @@
 
   function formatDec(num, base, opts) {
     var workingNum = num/base;
-    var ROUND = opts.round ? 'round' : 'floor';
+    var ROUND = Math[opts.round ? 'round' : 'floor'];
     if (opts.decimal === false) {
-      num = Math[ROUND](workingNum);
+      num = ROUND(workingNum);
       return num.toString();
     }
-    num = workingNum < 10 ? (Math[ROUND](workingNum * 10) / 10) : Math[ROUND](workingNum);
+    num = workingNum < 10 ? (ROUND(workingNum * 10) / 10) : ROUND(workingNum);
     num = num.toString();
     if (typeof opts.decimal === 'string') {
       num = num.replace('.', opts.decimal);
@@ -52,9 +52,7 @@
 
     // if we're working on a negative number, convert it to positive and then prefix the final result with a -
     var negative = num < 0;
-    if (negative) {
-      num = Math.abs(num);
-    }
+    num = Math.abs(num); // No need to check if negative
 
     var thousandsBreak = opts.min10k ? TEN_THOUSAND : THOUSAND;
 
