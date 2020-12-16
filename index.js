@@ -1,16 +1,26 @@
-#!/usr/bin/env node
-
-const fetch = require("./extra/node-fetch/lib/index.js")
+const fetch = require("./extra/node-fetch")
 const { exec, child } = require("child_process")
 const baseurl = "https://rovelapi.glitch.me"
-const text = require("./extra/ansi-colors/index.js")
-const command = require("./extra/commander.js/index.js")
-const htp = require("http")
+const text = require("./extra/ansi-colors")
+const command = require("./extra/commander.js")
+const http = require("http")
 const fs = require("fs")
 const matcher = require("./extra/did-you-mean")
 const npm = require("./extra/api-npm/api.js")
 const prettynum = require("./extra/approx/index.js")
-const emoji = require("./extra/node-emoji");
+const emoji = require("./extra/node-emoji")
+const python = require("./extra/python-shell")
+const pkg = require("./package.json")
+const netspeed = require("./extra/network-speed")
+npm.getdetails("rovel.js", test);
+function test(data) {
+	if(pkg.version < data['dist-tags'].latest){
+		console.log(text.red.bold(`New update for ROVEL.JS! Please update your version ${pkg.version} with the current version ${data["dist-tags"].latest}!`));
+	}
+	if(pkg.beta==true && pkg.betabuild > data['dist-tags'].latest){
+		console.log(text.green.bold(`Thanks for installing the beta update of ROVEL.JS! Please note that beta versions may not work properly, and features given in beta may be removed. So please use this beta for testing purposes. If you find any bugs with beta version, kindly let us know either in github issues or in our discord server!\nStable Release:${data["dist-tags"].latest}\nBeta Version: ${pkg.version}`));
+	}
+}
 
 if(process.argv.includes("install")){
 	let arg = process.argv.join(" ");
@@ -85,4 +95,4 @@ function download(url, dest) {
     })
 }
 
-module.exports = { guildstats, chat, base, rovelexec, text, command, download, matcher, npm, prettynum, emoji }
+module.exports = { guildstats, chat, base, rovelexec, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed}

@@ -1,10 +1,8 @@
-#!/usr/bin/env node
-
 const rovel = require("./index.js");
-console.log(rovel.text.green.bold("Loaded ROVEL.JS"));
-var m = new rovel.matcher("hello hi");
-console.log(m.get('heelo'));
-if(process.argv[2]){
-console.log(rovel.prettynum(process.argv[2]));
-}
-console.log(rovel.emoji.get('smile'));
+const pkg = require("./package.json");
+rovel.npm.getdetails("rovel.js", test);
+
+function test(data) {
+if(pkg.version < data['dist-tags'].latest){
+	console.log(rovel.text.red.bold(`New update for ROVEL.JS! Please update your version ${pkg.version} with the current version ${data["dist-tags"].latest}!`));
+}}

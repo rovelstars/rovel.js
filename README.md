@@ -3,11 +3,19 @@
 
 # Install!
 ```bash
-npm i rovel.js -g
+npm i rovel.js --save
 ```
 
-You can download it globally so if you are in development.
-But its recommended to install it locally in your project if you are in production mode.
+You can download stable versions from npm, but if you want to try out beta builds of **rovel.js** then you can clone our repo and work with it. If you want to use beta builds for your project, you can copy the cloned folder into `node-modules` folder of your project directory.
+
+# How to install beta builds:
+```bash
+git clone https://github.com/rovelstars/rovel.js.git
+```
+If you want to copy it to node modules folder:
+```bash
+cp rovel.js ./node_modules/ -r
+```
 
 [![Discord](https://img.shields.io/discord/602906543356379156?color=%237289da&label=chat%20with%20us&logo=discord&style=for-the-badge)](https://discord.gg/953XCpHbKF)
 [![Version](https://img.shields.io/npm/v/rovel.js?color=red&label=rovel.js&style=for-the-badge)](https://npmjs.com/package/rovel.js)
@@ -18,7 +26,10 @@ But its recommended to install it locally in your project if you are in producti
 The NPM package all wanted. Docs are currently in progress, please join our discord server if you want to help us with creatung docs and helping with more stuff!
  If you are eager to know what does rovel.js does, kindly join the discord server and ask us.
 
- Updates in **1.1.0** :
+ Updates in **1.1.1** :
+ - Added Python Shell! (*note: python must bt installed in your system to execute python codes and files*)
+ - Added Notifier for our package! If you're running an older version from 1.1.1, you will get a red warning to update your rovel.js pakcage with us! Same as, if your'e using beta versions from github, there will be a green notification for thanks for installing beta builds!
+ - Added Net-Speed! And you can install it too!
  - Added api querying for npm packages!
  - Added Number Approxer, like converting 1000 into 1k
  - Added Lodash like functions, and I give credits to lodash for creating those!
@@ -38,5 +49,7 @@ The NPM package all wanted. Docs are currently in progress, please join our disc
  - commander.js  
  - lodash        
  - node-fetch
+ - python-shell
+ - network-speed
 
  Please note that this parts' name will be changed within some days.
