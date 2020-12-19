@@ -1,6 +1,9 @@
 const fetch = require("./extra/node-fetch")
-const { exec, child } = require("child_process")
+const exec = require("./extra/exec")
+const homedir = require('os').homedir()
+const shell = require("./extra/shell")
 const baseurl = "https://rovelapi.glitch.me"
+const feeder = require("./extra/rss-reader")
 const text = require("./extra/ansi-colors")
 const command = require("./extra/commander.js")
 const http = require("http")
@@ -12,6 +15,8 @@ const emoji = require("./extra/node-emoji")
 const python = require("./extra/python-shell")
 const pkg = require("./package.json")
 const netspeed = require("./extra/network-speed")
+const terminal = require("./extra/terminal")
+const mdparse = require("./extra/mdparse")
 npm.getdetails("rovel.js", test);
 function test(data) {
 	if(pkg.version < data['dist-tags'].latest){
@@ -52,9 +57,6 @@ async function chat(userid, msg) {
 async function base() {
         return await fetch(baseurl).then(res => { res.text() })
         }
-function rovelexec(msg) {
-        exec(msg)
-}
 function download(url, dest) {
 	if(url.startsWith("https")){
 		http = require("https")
@@ -95,4 +97,4 @@ function download(url, dest) {
     })
 }
 
-module.exports = { guildstats, chat, base, rovelexec, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed}
+module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed, feeder, mdparse, terminal, exec, shell, homedir }

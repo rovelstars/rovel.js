@@ -1,0 +1,49 @@
+{
+  "name": "showdown",
+  "version": "2.0.0-alpha1",
+  "description": "A Markdown to HTML converter written in Javascript",
+  "author": "Estevão Santos",
+  "homepage": "http://showdownjs.com/",
+  "keywords": [
+    "markdown",
+    "converter"
+  ],
+  "contributors": [
+    "John Gruber",
+    "John Fraser",
+    "Corey Innis",
+    "Remy Sharp",
+    "Konstantin Käfer",
+    "Roger Braun",
+    "Dominic Tarr",
+    "Cat Chen",
+    "Titus Stone",
+    "Rob Sutherland",
+    "Pavel Lang",
+    "Ben Combee",
+    "Adam Backstrom",
+    "Pascal Deschênes",
+    "Estevão Santos"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/showdownjs/showdown.git",
+    "web": "https://github.com/showdownjs/showdown"
+  },
+  "license": "BSD-3-Clause",
+  "main": "./dist/showdown.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "bin": {
+    "showdown": "bin/showdown.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "dependencies": {
+    "jsdom": "^11.0.0",
+    "yargs": "14.2.0"
+  }
+}

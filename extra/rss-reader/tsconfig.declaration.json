@@ -1,0 +1,24 @@
+{
+  "inlcude": [
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "test/**/*.js",
+    "types/**/*.*",
+    "types/**/**.d.ts",
+    "node_modules/**/*.*"
+  ],
+  "compilerOptions": {
+    "outDir": "./types",
+    "declaration": true,
+    "noEmit": false,
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "lib": ["ES6","ES7"],
+    "target": "ES2019",
+    "moduleResolution": "Node",
+    "module": "ES6",
+    "useDefineForClassFields": true,
+    "skipLibCheck": true
+  }
+}

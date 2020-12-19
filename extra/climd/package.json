@@ -1,0 +1,42 @@
+{
+  "name": "cli-markdown",
+  "version": "1.7.0",
+  "description": "Render Markdown to Terminal",
+  "bugs": {
+    "url": "https://github.com/horosgrisa/cli-markdown/issues"
+  },
+  "homepage": "https://github.com/horosgrisa/cli-markdown",
+  "main": "index.js",
+  "bin": {
+    "markdown": "./bin/markdown.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "fix": "eslint --quiet --fix *.js bin/*.js .eslintrc.js --ignore-pattern '!.eslintrc.js'"
+  },
+  "dependencies": {
+    "cli-html": "^1.8.0",
+    "marked": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.12.0"
+  },
+  "author": "Grigorii Horos <horosgrisa@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horosgrisa/cli-markdown.git"
+  },
+  "keywords": [
+    "html",
+    "render",
+    "terminal",
+    "cli",
+    "marked",
+    "markdown",
+    "markdown-to-cli",
+    "markdown-to-terminal",
+    "html-to-terminal"
+  ]
+}
