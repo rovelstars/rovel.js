@@ -3,9 +3,10 @@
 const {compile} = require("./compile.js");
 const rovel = require("../../index.js");
 console.log(rovel.text.yellow.bold("Starting Compiling!"));
+
 if(process.argv[2] == null || process.argv[2] == undefined){
 	console.error(rovel.text.red.bold("No file given to compile it to javascript"));
-		process.exit(0);
+	process.exit(0);
 }
 let files = process.argv.join(" ");
 files = files.split("compile ");

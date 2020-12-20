@@ -1,6 +1,6 @@
 const {execapp} = require("./execapp.js");
 function clear(win){
-	if(win){
+    if(win){
 const { exec } = require('child_process');
 var yourscript = exec('cls',
         (error, stdout, stderr) => {
@@ -10,8 +10,8 @@ var yourscript = exec('cls',
                 console.log(`exec error: ${error}`);
             }
         });
-	}
-	if(!win){
+    }
+    if(!win){
 const { exec } = require('child_process');
 var yourscript = exec('clear',
         (error, stdout, stderr) => {
@@ -21,6 +21,7 @@ var yourscript = exec('clear',
                 console.log(`exec error: ${error}`);
             }
         });
-	}
+    }
 }
+
 module.exports={clear};

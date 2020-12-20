@@ -5,6 +5,6 @@ var child = child_process.spawn(editor, ['index.js'], {
     stdio: 'inherit'
 });
 
-child.on('exit', function (e, code) {
+child.on('exit', function(e, code) {
     console.log("finished");
 });
