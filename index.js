@@ -2,11 +2,11 @@ const fetch = require("./extra/node-fetch")
 const exec = require("./extra/exec")
 const homedir = require('os').homedir()
 const shell = require("./extra/shell")
-const baseurl = "https://rovelapi.glitch.me"
 const feeder = require("./extra/rss-reader")
 const text = require("./extra/ansi-colors")
 const command = require("./extra/commander.js")
 const http = require("http")
+const https = require("https")
 const fs = require("fs")
 const matcher = require("./extra/did-you-mean")
 const npm = require("./extra/api-npm/api.js")
@@ -17,54 +17,61 @@ const pkg = require("./package.json")
 const netspeed = require("./extra/network-speed")
 const terminal = require("./extra/terminal")
 const mdparse = require("./extra/mdparse")
+
+const BASE_URL = "https://rovelapi.glitch.me";
+
 npm.getdetails("rovel.js", test);
 function test(data) {
-	if(pkg.version < data['dist-tags'].latest){
-		console.log(text.red.bold(`New update for ROVEL.JS! Please update your version ${pkg.version} with the current version ${data["dist-tags"].latest}!`));
-	}
-	if(pkg.beta==true && pkg.betabuild > data['dist-tags'].latest){
-		console.log(text.green.bold(`Thanks for installing the beta update of ROVEL.JS! Please note that beta versions may not work properly, and features given in beta may be removed. So please use this beta for testing purposes. If you find any bugs with beta version, kindly let us know either in github issues or in our discord server!\nStable Release:${data["dist-tags"].latest}\nBeta Version: ${pkg.version}`));
-	}
+    if (pkg.version < data['dist-tags'].latest) {
+        console.log(text.red.bold(`New update for ROVEL.JS! Please update your version ${pkg.version} with the current version ${data["dist-tags"].latest}!`));
+    }
+
+    if (pkg.beta == true && pkg.betabuild > data['dist-tags'].latest) {
+        console.log(text.green.bold(`Thanks for installing the beta update of ROVEL.JS! Please note that beta versions may not work properly, and features given in beta may be removed. So please use this beta for testing purposes. If you find any bugs with beta version, kindly let us know either in github issues or in our discord server!\nStable Release:${data["dist-tags"].latest}\nBeta Version: ${pkg.version}`));
+    }
 }
 
-if(process.argv.includes("install")){
-	let arg = process.argv.join(" ");
-	arg = arg.split("install ");
-	if(arg[0].includes("install")){
-		console.log("Please provide a package's name on npm that we have to install.");
-		return;
-	}
-	
+if (process.argv.includes("install")) {
+    let arg = process.argv.join(" ").split("install ");
+    if (arg[0].includes("install")) {
+        console.log("Please provide a package's name on npm that we have to install.");
+        return;
+    }
 }
 
-if(process.argv.includes("--test")){
-	console.log(text.green.bold("Successfully Working"));
-	return;
+if (process.argv.includes("--test")) {
+    console.log(text.green.bold("Successfully Working"));
+    return;
 }
 
-function guildstats(botid, key, guild) {
-        fetch(`https://dbots.co/api/v1/bots/${botid}/stats`, {
-                body: JSON.stringify({ guildCount: guild }),
-                headers: {
-                        "Authorization": key,
-                        "Content-Type": "application/json"
-                },
-                method: "POST",
-        })
+async function guildstats(botid, key, guild) {
+    await fetch(`https://dbots.co/api/v1/bots/${botid}/stats`, {
+        body: JSON.stringify({ guildCount: guild }),
+        headers: {
+            "Authorization": key,
+            "Content-Type": "application/json"
+        },
+        method: "POST",
+    });
 }
-async function chat(userid, msg) {
-        return await fetch(baseurl+`/chat?user=${userid}&msg=${msg}`).then(r=> {r.text()})}
+
+async function chat(user_id, msg) {
+    const resp = await fetch(BASE_URL + `/chat?user=${user_id}&msg=${msg}`);
+    return await resp.text();
+}
+
 async function base() {
-        return await fetch(baseurl).then(res => { res.text() })
-        }
+    const resp = await fetch(BASE_URL);
+    return await resp.text();
+}
+
 function download(url, dest) {
-	if(url.startsWith("https")){
-		http = require("https")
-	}
+    const lib = url.startsWith("https") ? https : http;
+
     return new Promise((resolve, reject) => {
         const file = fs.createWriteStream(dest, { flags: "wx" })
 
-        const request = http.get(url, response => {
+        const request = lib.get(url, response => {
             if (response.statusCode === 200) {
                 response.pipe(file)
             } else {
@@ -97,4 +104,4 @@ function download(url, dest) {
     })
 }
 
-module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed, feeder, mdparse, terminal, exec, shell, homedir }
+module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed, feeder, mdparse, exec, homedir, shell, terminal };

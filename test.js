@@ -1,2 +1,8 @@
 const rovel = require("./index.js");
-console.log(rovel.homedir);
+
+async function main() {
+    const chat = await rovel.chat(694248846381023332, "test");
+    console.log(chat);
+}
+
+main();
