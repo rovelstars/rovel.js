@@ -1,6 +1,8 @@
 const child_process = require('child_process')
+
 function execarg(app, args){
-var child = child_process.spawn(app, [args], {
+	args = args.split(" ");
+var child = child_process.spawn(app, args, {
     stdio: 'inherit'
 });
 

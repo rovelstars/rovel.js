@@ -6,7 +6,8 @@
   "description": "The collection of best stuff & APIs you will love!",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node index.js --test",
+    "start": "npm link && rovelos-install"
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,9 @@
   "license": "AGPL-1.0-or-later",
   "bugs": {
     "url": "https://github.com/rovelstars/rovel.js/issues"
+  },
+  "bin": {
+    "rovelos-install": "rosins.js"
   },
   "homepage": "https://github.com/rovelstars/rovel.js#readme"
 }

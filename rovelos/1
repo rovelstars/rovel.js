@@ -1,0 +1,17 @@
+{
+  "name": "rovelos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node install.js && node ../rosins.js --done"
+  },
+  "bin": {
+    "rovelos-login": "bin/main.js",
+    "rovelos-logout": "bin/out.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

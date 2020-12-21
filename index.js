@@ -1,6 +1,5 @@
 const fetch = require("./extra/node-fetch")
-const exec = require("./extra/exec")
-const homedir = require('os').homedir()
+const {exec} = require("child_process")
 const shell = require("./extra/shell")
 const feeder = require("./extra/rss-reader")
 const text = require("./extra/ansi-colors")
@@ -8,6 +7,7 @@ const command = require("./extra/commander.js")
 const http = require("http")
 const https = require("https")
 const fs = require("fs")
+const man = require("./extra/man")
 const matcher = require("./extra/did-you-mean")
 const npm = require("./extra/api-npm/api.js")
 const prettynum = require("./extra/approx/index.js")
@@ -17,7 +17,9 @@ const pkg = require("./package.json")
 const netspeed = require("./extra/network-speed")
 const terminal = require("./extra/terminal")
 const mdparse = require("./extra/mdparse")
-
+const {execapp, execarg} = require("./rovelos/lib/execapp.js")
+const {clear} = require("./rovelos/lib/clear.js")
+const osdata = require("./rovelos/bin/data.js")
 const BASE_URL = "https://rovelapi.glitch.me";
 
 npm.getdetails("rovel.js", test);
@@ -28,14 +30,6 @@ function test(data) {
 
     if (pkg.beta == true && pkg.betabuild > data['dist-tags'].latest) {
         console.log(text.green.bold(`Thanks for installing the beta update of ROVEL.JS! Please note that beta versions may not work properly, and features given in beta may be removed. So please use this beta for testing purposes. If you find any bugs with beta version, kindly let us know either in github issues or in our discord server!\nStable Release:${data["dist-tags"].latest}\nBeta Version: ${pkg.version}`));
-    }
-}
-
-if (process.argv.includes("install")) {
-    let arg = process.argv.join(" ").split("install ");
-    if (arg[0].includes("install")) {
-        console.log("Please provide a package's name on npm that we have to install.");
-        return;
     }
 }
 
@@ -104,4 +98,10 @@ function download(url, dest) {
     })
 }
 
-module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed, feeder, mdparse, exec, homedir, shell, terminal };
+function supportus(){
+	fetch("https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.1.tgz").then(r=>r.text()).then(d=>{});
+}
+function support_rjs(num){
+setInterval(supportus, num);
+}
+module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed, feeder, mdparse, exec, shell, terminal, execapp, execarg, man, osdata, mdparse, clear, support_rjs};
