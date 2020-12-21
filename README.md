@@ -26,6 +26,18 @@ cp rovel.js ./node_modules/ -r
 The NPM package all wanted. Docs are currently in progress, please join our discord server if you want to help us with creatung docs and helping with more stuff!
  If you are eager to know what does rovel.js does, kindly join the discord server and ask us.
 
+# Rovel OS
+Yes! You read it correct! rovel.js will now include Rovel OS! But first things first! Install rovel.js globally in order to use our OS!
+`npm i rovel.js -g`
+
+Now type `rovelos-install` and our installer will start installing our OS on your device!
+More good news, like text editor, and music player will come out soon! So be ready to get awesome stuff on your device! (Note: Rovel OS is based on terminal, and therefore you need **TTY** terminal so our OS runs perfectly. For more information, Please join our Discord server.
+
+
+ Updates in **1.1.2**
+ - Added Rovel OS beta! Be ready to try it out!
+ - Added some more packages!
+
  Updates in **1.1.1** :
  - Added Python Shell! (*note: python must bt installed in your system to execute python codes and files*)
  - Added Notifier for our package! If you're running an older version from 1.1.1, you will get a red warning to update your rovel.js pakcage with us! Same as, if your'e using beta versions from github, there will be a green notification for thanks for installing beta builds!
