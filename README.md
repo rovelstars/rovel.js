@@ -1,5 +1,5 @@
 # rovel.js
-# update 1.1.1 - Welcome to the update of terminal awesomeness!
+# update 1.1.2 - Welcome to the update of terminal awesomeness!
 
 # Install!
 ```bash
