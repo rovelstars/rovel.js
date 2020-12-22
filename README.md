@@ -22,6 +22,8 @@ cp rovel.js ./node_modules/ -r
 [![Version](https://img.shields.io/npm/v/rovel.js?color=red&label=rovel.js&style=for-the-badge)](https://npmjs.com/package/rovel.js)
 [![Downloads](https://img.shields.io/npm/dm/rovel.js?color=red&label=rovel.js%20downloads&logo=npm&style=for-the-badge)](https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.1.tgz)
 [![License](https://img.shields.io/npm/l/rovel.js?style=for-the-badge)](https://npmjs.com/package/rovel.js)
+![Lines of code](https://img.shields.io/tokei/lines/github/rovelstars/rovel.js?logo=github&style=for-the-badge)
+[![Help](http://img.shields.io/static/v1?label=roveljs&message=looking%20for%20maintainers%20and%20testers&color=yellow&style=for-the-badge&logo=discord)](https://discord.gg/953XCpHbKF)
 [![Build Status](https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&logo=github&style=for-the-badge)](https://github.com/rovelstars/rovel.js)
 
 
