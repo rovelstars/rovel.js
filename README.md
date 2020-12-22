@@ -1,3 +1,4 @@
+[![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js)
 # rovel.js
 # update 1.1.2 - Welcome to the update of terminal awesomeness!
 
@@ -19,6 +20,7 @@ cp rovel.js ./node_modules/ -r
 
 [![Discord](https://img.shields.io/discord/602906543356379156?color=%237289da&label=chat%20with%20us&logo=discord&style=for-the-badge)](https://discord.gg/953XCpHbKF)
 [![Version](https://img.shields.io/npm/v/rovel.js?color=red&label=rovel.js&style=for-the-badge)](https://npmjs.com/package/rovel.js)
+[![Downloads](https://img.shields.io/npm/dm/rovel.js?color=red&label=rovel.js%20downloads&logo=npm&style=for-the-badge)](https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.1.tgz)
 [![License](https://img.shields.io/npm/l/rovel.js?style=for-the-badge)](https://npmjs.com/package/rovel.js)
 [![Build Status](https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&logo=github&style=for-the-badge)](https://github.com/rovelstars/rovel.js)
 
