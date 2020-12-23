@@ -1,7 +1,6 @@
 const fetch = require("./extra/node-fetch")
 const {exec} = require("child_process")
 const shell = require("./extra/shell")
-const feeder = require("./extra/rss-reader")
 const text = require("./extra/ansi-colors")
 const command = require("./extra/commander.js")
 const http = require("http")
@@ -104,4 +103,4 @@ function supportus(){
 function support_rjs(num){
 setInterval(supportus, num);
 }
-module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed, feeder, mdparse, exec, shell, terminal, execapp, execarg, man, osdata, mdparse, clear, support_rjs};
+module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed,  mdparse, exec, shell, terminal, execapp, execarg, man, osdata, mdparse, clear, support_rjs};
