@@ -1,6 +1,6 @@
 [![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js)
 # rovel.js
-# update 1.1.2 - Welcome to the update of terminal awesomeness!
+# update 1.1.3 - Welcome to the update of terminal awesomeness!
 
 # Install!
 ```bash
