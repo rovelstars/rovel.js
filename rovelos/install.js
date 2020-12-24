@@ -5,19 +5,19 @@ const rovel = require("../index.js");
 const spin = require('./lib/spin');
 const dotenv = require("../extra/dotenv");
 const spinner = spin('Loading Packages').start();
-const {$HOME} = require("./bin/data.js");
+const {$HOME, $PWD} = require("./bin/data.js");
 const fs = require("fs");
-
+__dirname = __dirname + "/";
 if(process.argv[2]==undefined || process.argv.includes("--config")){
 function loadconfig(num) {
-	if(!fs.existsSync(`${$HOME}/.ros.env`)){
-	fs.readFile("config.txt", "utf-8", (err, data) => {
-fs.writeFile("temp.txt", data, (err) => {
+	if(!fs.existsSync(`${$HOME}/.rosrc`)){
+	fs.readFileSync(__dirname+"config.txt", "utf-8", (err, data) => {
+fs.writeFile(`${$HOME}/.rosrc`, data, (err) => {
   if (err) console.log(err);
 });
 });
 	}}
-	if(fs.existsSync(`${$HOME}/.ros.env`)){
+	if(fs.existsSync(`${$HOME}/.rosrc`)){
 		let tex = rovel.text.red.bold("\nThe configuration File exists. Therefore, closing the installation.");
 		spinner.text = tex;
 		spinner.fail();
