@@ -11,10 +11,11 @@ const fs = require("fs");
 if(process.argv[2]==undefined || process.argv.includes("--config")){
 function loadconfig(num) {
 	if(!fs.existsSync(`${$HOME}/.ros.env`)){
-	fs.readFile("./bin/config.env", 'utf8', function(err, data){
-	fs.writeFile(`${$HOME}/.ros.env`, data, function(err){
-		if (err) throw error;
-	})})
+	fs.readFile("config.txt", "utf-8", (err, data) => {
+fs.writeFile("temp.txt", data, (err) => {
+  if (err) console.log(err);
+});
+});
 	}}
 	if(fs.existsSync(`${$HOME}/.ros.env`)){
 		let tex = rovel.text.red.bold("\nThe configuration File exists. Therefore, closing the installation.");
@@ -36,6 +37,10 @@ setTimeout(() => {
 setTimeout(() => {
 	spinner.text = "Saved Configuration!";
 	spinner.succeed();
-	execarg("node","../rosins.js --done");
 }, 9000);
 }
+
+setTimeout(() => {
+	console.log(rovel.text.green.bold("\nCompleted installing Rovel OS successfully ✓\nPlease run \"rovelos-login\" to start Rovel OS.\nThanks from Rovel Team for installing Rovel OS!"));
+}, 10000);
+
