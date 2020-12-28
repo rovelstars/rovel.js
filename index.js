@@ -1,4 +1,4 @@
-const fetch = require("./extra/node-fetch")
+const fetch = require("./extra/fetch")
 const {exec} = require("child_process")
 const shell = require("./extra/shell")
 const text = require("./extra/ansi-colors")
@@ -36,7 +36,7 @@ if (process.argv.includes("--test")) {
     console.log(text.green.bold("Successfully Working"));
     return;
 }
-
+/*
 async function guildstats(botid, key, guild) {
     await fetch(`https://dbots.co/api/v1/bots/${botid}/stats`, {
         body: JSON.stringify({ guildCount: guild }),
@@ -46,8 +46,15 @@ async function guildstats(botid, key, guild) {
         },
         method: "POST",
     });
-}
+}*/
 
+async function guildstats(botid, key, guild) {
+	await fetch.post(`https://dbots.co/api/v1/bots/${botid}/stats`,
+		body: JSON.stringify({ guildCount: guild }),
+		headers: {                                                                                          "Authorization": key,                                                                           "Content-Type": "application/json"                                                          },
+	).then(res=>console.log(res));
+}
+guildstats(603213294265958400, hello, 30);
 async function chat(user_id, msg) {
     const resp = await fetch(BASE_URL + `/chat?user=${user_id}&msg=${msg}`);
     return await resp.text();
@@ -97,10 +104,4 @@ function download(url, dest) {
     })
 }
 
-function supportus(){
-	fetch("https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.1.tgz").then(r=>r.text()).then(d=>{});
-}
-function support_rjs(num){
-setInterval(supportus, num);
-}
-module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed,  mdparse, exec, shell, terminal, execapp, execarg, man, osdata, mdparse, clear, support_rjs};
+module.exports = { guildstats, chat, base, text, command, download, matcher, npm, prettynum, emoji, python, fetch, netspeed,  mdparse, exec, shell, terminal, execapp, execarg, man, osdata, mdparse, clear};
