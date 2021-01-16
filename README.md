@@ -4,7 +4,7 @@
 
 # Install!
 ```bash
-npm i rovel.js --save
+npm install rovel.js --save
 ```
 
 You can download stable versions from npm, but if you want to try out beta builds of **rovel.js** then you can clone our repo and work with it. If you want to use beta builds for your project, you can copy the cloned folder into `node-modules` folder of your project directory.
@@ -13,7 +13,7 @@ You can download stable versions from npm, but if you want to try out beta build
 ```bash
 git clone https://github.com/rovelstars/rovel.js.git
 ```
-If you want to copy it to node modules folder:
+If you want to copy it to the node modules folder:
 ```bash
 cp rovel.js ./node_modules/ -r
 ```
@@ -29,15 +29,15 @@ cp rovel.js ./node_modules/ -r
 [![Build Status](https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&logo=github&style=for-the-badge)](https://github.com/rovelstars/rovel.js)
 
 
-The NPM package all wanted. Docs are currently in progress, please join our discord server if you want to help us with creatung docs and helping with more stuff!
- If you are eager to know what does rovel.js does, kindly join the discord server and ask us.
+The NPM package all wanted. Docs are currently in progress, please join our discord server if you want to help us with creating docs and helping with more stuff!
+ If you are eager to know what rovel.js does, kindly join the discord server and ask us.
 
 # Rovel OS
-Yes! You read it correct! rovel.js will now include Rovel OS! But first things first! Install rovel.js globally in order to use our OS!
-`npm i rovel.js -g`
+Yes! You read it correctly! rovel.js will now include Rovel OS! But first things first! Install rovel.js globally to use our OS!
+`npm install rovel.js -g`
 
 Now type `rovelos-install` and our installer will start installing our OS on your device!
-More good news, like text editor, and music player will come out soon! So be ready to get awesome stuff on your device! (Note: Rovel OS is based on terminal, and therefore you need **TTY** terminal so our OS runs perfectly. For more information, Please join our Discord server.
+More good news, like a text editor, and music player will come out soon! So be ready to get awesome stuff on your device! (Note: Rovel OS is based on the terminal, and therefore you need **TTY** terminal so our OS runs perfectly. For more information, please join our Discord server.
 
 
  Updates in **1.1.2**
@@ -46,14 +46,14 @@ More good news, like text editor, and music player will come out soon! So be rea
 
  Updates in **1.1.1** :
  - Added Python Shell! (*note: python must bt installed in your system to execute python codes and files*)
- - Added Notifier for our package! If you're running an older version from 1.1.1, you will get a red warning to update your rovel.js pakcage with us! Same as, if your'e using beta versions from github, there will be a green notification for thanks for installing beta builds!
+ - Added Notifier for our package! If you're running an older version from 1.1.1, you will get a red warning to update your rovel.js package with us! Same as, if you're using beta versions from GitHub, there will be a green notification for thanks for installing beta builds!
  - Added Net-Speed! And you can install it too!
- - Added api querying for npm packages!
+ - Added API querying for npm packages!
  - Added Number Approxer, like converting 1000 into 1k
  - Added Lodash like functions, and I give credits to lodash for creating those!
  - Added Node Emoji, which is a package exclusively for emojis in your code.
  - Added test.js file which tests our pkg fully!
- - Update: If you just want to use a part of our pkg, like you are using emojis only from our code, you can load that only, thus decreasing memory usage and starting your code more fast. If you want to use this, do like this:
+ - Update: If you just want to use a part of our pkg, like you are using emojis only from our code, you can load that only, thus decreasing memory usage and starting your code faster. If you want to use this, do like this:
  ```js
  const emoji = require('rovel.js/extra/node-emoji');
  console.log(emoji.get("sunglasses")+" I work!");
@@ -70,4 +70,4 @@ More good news, like text editor, and music player will come out soon! So be rea
  - python-shell
  - network-speed
 
- Please note that this parts' name will be changed within some days.
+ Please note that these parts name will be changed within some days.
