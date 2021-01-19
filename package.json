@@ -1,0 +1,68 @@
+{
+  "name": "rovel.js",
+  "version": "1.1.6",
+  "betabuild": "1.1.7",
+  "beta": true,
+  "description": "The collection of best stuff & APIs you will love!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js --test",
+    "start": "echo good"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rovelstars/rovel.js.git"
+  },
+  "keywords": [
+    "rovel",
+    "stars",
+    "roveljs",
+    "terminal",
+    "term",
+    "color",
+    "colour",
+    "text",
+    "style",
+    "awesome",
+    "api",
+    "bot",
+    "list",
+    "discord",
+    "js",
+    "rbl",
+    "api",
+    "fetch",
+    "node",
+    "npm",
+    "download",
+    "many",
+    "functions",
+    "lodash",
+    "exec",
+    "shelljs",
+    ".js",
+    "chalk",
+    "terminal",
+    "commander",
+    "command",
+    "popular",
+    "collection",
+    "best",
+    "game",
+    "features"
+  ],
+  "author": "rovelstars",
+  "license": "AGPL-1.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rovelstars/rovel.js/issues"
+  },
+  "bin": {
+    "rovelos-install": "rovelos/install.js",
+    "rovelos-login": "rovelos/bin/main.js",
+    "rovelos-logout": "rovelos/bin/out.js",
+    "http-server": "server/http.js",
+    "https-server": "server/https.js"
+  },
+  "homepage": "https://rovel.js.org",
+  "dependencies": {}
+}
