@@ -2,6 +2,9 @@
 
 [![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js) **The NPM package we all wanted!**
 
+# 1.1.7 | Added Time Plugin!
+Also we now have our docs running [here](https://rovelstars.ga) although its 90% completed.
+
 # 1.1.6 | Removed ts badge from our npm site link
 Since we don't use typescript, we don't love that badge besie our name. Also, we decreased our code again!
 Even though no new Update, but we are commiting 50+ files update!
@@ -10,12 +13,6 @@ Even though no new Update, but we are commiting 50+ files update!
 - New: added env parser, which is needed for Rovel OS.
 - Fixed: Rovel OS by adding env again.
 - Removed: Different repo that shouldn't be added, thanks to **luke** on Discord, with cat pfp xD. Also compiler js removed too, and it may be removed from github repo in a future update, or may be worked on afterwards.
-
-# v1.1.4 | Big + lightweight update!
-- New: Removed useless stuff, including my music that i downloaded through wget, for testing rovel OS. Also we have now plugins and app folder! And also, rovel.js will be hsed for RDL (Rovel Discord List) (Coming soon on Feb!)
-- Fixed: all plugins for loading. This includes fetch api! (our core I think ;) )
-also updated this readme (spelling mistakes xD)
-- Removed: All big useless stuff.
 
 [![NPM](https://nodei.co/npm/rovel.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rovel.js/)
 
