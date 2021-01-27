@@ -64,5 +64,6 @@
     "https-server": "server/https.js"
   },
   "homepage": "https://rovel.js.org",
-  "dependencies": {}
+  "dependencies": {},
+  "runkitExampleFilename": "test.js"
 }
