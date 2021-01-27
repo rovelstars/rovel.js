@@ -39,7 +39,7 @@ if (process.argv.includes("--test")) {
     console.log(text.green.bold("Successfully Loaded All Plugins and Apps.\n")+text.yellow("If any error would occur, original error would popup."));
     process.exit(0);
 }
-console.log(text.green("Thanks for using ") + text.red.bold("rovel.js\n")+text.green("If you need any help or found a bug, please join our discord server\nhttps://discord.gg/953XCpHbKF"));
+console.log("Thanks for using rovel.js\nIf you need any help or found a bug, please join our discord server\nhttps://discord.gg/953XCpHbKF");
 
 //start of stuff for later ones.
 

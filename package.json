@@ -1,8 +1,8 @@
 {
   "name": "rovel.js",
   "version": "1.1.7",
-  "betabuild": "1.1.7",
-  "beta": false,
+  "betabuild": "1.1.8",
+  "beta": true,
   "description": "The collection of best stuff & APIs you will love!",
   "main": "index.js",
   "scripts": {
