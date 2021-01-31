@@ -1,6 +1,6 @@
 ![Logo](https://cdn.discordapp.com/attachments/775220204699385886/800004524718424074/Screenshot_20210116-1940022.png)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js) **The NPM package we all wanted!**
@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Dan23123"><img src="https://avatars.githubusercontent.com/u/67073659?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dan</b></sub></a><br /><a href="https://github.com/rovelstars/rovel.js/commits?author=Dan23123" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Soulless-404"><img src="https://avatars.githubusercontent.com/u/61725851?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rahul Mishra</b></sub></a><br /><a href="https://github.com/rovelstars/rovel.js/commits?author=Soulless-404" title="Documentation">📖</a></td>
   </tr>
 </table>
 
