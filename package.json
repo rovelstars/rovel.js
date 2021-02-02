@@ -1,13 +1,14 @@
 {
   "name": "rovel.js",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "betabuild": "1.1.8",
-  "beta": true,
+  "beta": false,
   "description": "The collection of best stuff & APIs you will love!",
   "main": "index.js",
   "scripts": {
     "test": "node index.js --test",
-    "start": "echo good"
+    "start": "echo good",
+    "postinstall": "node welcome.js"
   },
   "repository": {
     "type": "git",
@@ -61,7 +62,8 @@
     "rovelos-login": "rovelos/bin/main.js",
     "rovelos-logout": "rovelos/bin/out.js",
     "http-server": "server/http.js",
-    "https-server": "server/https.js"
+    "https-server": "server/https.js",
+    "supports-colors": "plugins/supports-colors/bin.js"
   },
   "homepage": "https://rovel.js.org",
   "dependencies": {},

@@ -10,6 +10,11 @@ const clihelp = require("./plugins/clihelp/lib/index.js");
 const emoji = require("./plugins/node-emoji/index.js");
 const env = require("./plugins/env/lib/main.js");
 const time = require("./plugins/time/time.js");
+const pkgjs = require("./plugins/pkgjs/index.js");
+const supportsColors = require("./plugins/supports-colors");
+
+//check whether terminal support colors
+text.enabled = supportsColors.hasBasic;
 
 //functions
 const {exec} = require("child_process");
@@ -39,11 +44,9 @@ if (process.argv.includes("--test")) {
     console.log(text.green.bold("Successfully Loaded All Plugins and Apps.\n")+text.yellow("If any error would occur, original error would popup."));
     process.exit(0);
 }
-console.log("Thanks for using rovel.js\nIf you need any help or found a bug, please join our discord server\nhttps://discord.gg/953XCpHbKF");
-
 //start of stuff for later ones.
 
 //export plugins
-module.exports = {pkg, text, approx, func, netspeed, npm, fetch, clihelp, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner};
+module.exports = {pkg, text, approx, func, netspeed, npm, fetch, clihelp, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner, pkgjs, supportsColors};
 
 

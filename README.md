@@ -2,17 +2,17 @@
 
 [![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js) **The NPM package we all wanted!**
 
+# 1.1.8 | Improvements
+We added `supports-colors` & `pkgjs` plugins while we removed the Thank you message whenever you used rovel.js
+Instead, the thank you message will popup when you install rovel.js :smile:
+Also we made `text` plugin use `supports-colors` by default so you don't get any random \ texts if your terminal dosen't supports colors.
+
 # 1.1.7 | Added Time Plugin!
 Also we now have our docs running [here](https://rovelstars.ga) although its 90% completed.
 
 # 1.1.6 | Removed ts badge from our npm site link
 Since we don't use typescript, we don't love that badge besie our name. Also, we decreased our code again!
 Even though no new Update, but we are commiting 50+ files update!
-
-# 1.1.5 | Fixes and small updates
-- New: added env parser, which is needed for Rovel OS.
-- Fixed: Rovel OS by adding env again.
-- Removed: Different repo that shouldn't be added, thanks to **luke** on Discord, with cat pfp xD. Also compiler js removed too, and it may be removed from github repo in a future update, or may be worked on afterwards.
 
 [![NPM](https://nodei.co/npm/rovel.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rovel.js/)
 

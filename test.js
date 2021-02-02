@@ -1,1 +1,1 @@
-const rovel = require("./index.js");
+let rovel = require("rovel.js");
