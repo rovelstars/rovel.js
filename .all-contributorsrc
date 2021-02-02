@@ -22,6 +22,25 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "sayantan300",
+      "name": "sayantan300",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62213554?v=4",
+      "profile": "https://status.rovelstars.ga",
+      "contributions": [
+        "code",
+        "content",
+        "data",
+        "doc",
+        "design",
+        "ideas",
+        "question",
+        "projectManagement",
+        "review",
+        "test",
+        "tutorial"
+      ]
     }
   ],
   "contributorsPerLine": 7,
