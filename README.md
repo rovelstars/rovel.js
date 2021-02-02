@@ -15,7 +15,7 @@ Since we don't use typescript, we don't love that badge besie our name. Also, we
 Even though no new Update, but we are commiting 50+ files update!
 
 [![NPM](https://nodei.co/npm/rovel.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rovel.js/)
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=for-the-badge)](#contributors-)
+[![All Contributors](https://img.shields.io/github/all-contributors/rovelstars/rovel.js?color=%23ff0000&label=rovel.js%20contributors&logo=undertale&logoColor=%23ff0000&style=for-the-badge)](#contributors-)
 [![Discord](https://img.shields.io/discord/602906543356379156?color=%237289da&label=chat%20with%20us&logo=discord&style=for-the-badge)](https://discord.gg/953XCpHbKF)
 [![Version](https://img.shields.io/npm/v/rovel.js?color=red&label=rovel.js&style=for-the-badge)](https://npmjs.com/package/rovel.js)
 [![Downloads](https://img.shields.io/npm/dm/rovel.js?color=red&label=rovel.js%20downloads&logo=npm&style=for-the-badge)](https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.1.tgz)
