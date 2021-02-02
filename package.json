@@ -10,7 +10,7 @@
     "start": "echo good",
     "postinstall": "node welcome.js"
   },
-  "engines": "{"npm": "^6.x", "node": "^14.x"},
+  "engines": {"npm": "^6.x", "node": "^14.x"},
   "man": ["./roveljs.1"],
   "repository": {
     "type": "git",
