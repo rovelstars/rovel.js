@@ -2,6 +2,10 @@
 
 [![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js) **The NPM package we all wanted!**
 
+# 1.1.9 | More Improvents
+We added support for `man` or the mannual command on bash terminals. It prints out a basic message about us and rovel.js. If you are not on Linux, read the message [here](https://rovelstars.ga/rjs/man)
+Also made changes to minimun requirements, and therefore, you need **Nodejs v14.x+** & **Npm v6.x+** to run rovel.js perfectly.
+
 # 1.1.8 | Improvements
 We added `supports-colors` & `pkgjs` plugins while we removed the Thank you message whenever you used rovel.js
 Instead, the thank you message will popup when you install rovel.js :smile:
@@ -9,10 +13,6 @@ Also we made `text` plugin use `supports-colors` by default so you don't get any
 
 # 1.1.7 | Added Time Plugin!
 Also we now have our docs running [here](https://rovelstars.ga) although its 90% completed.
-
-# 1.1.6 | Removed ts badge from our npm site link
-Since we don't use typescript, we don't love that badge besie our name. Also, we decreased our code again!
-Even though no new Update, but we are commiting 50+ files update!
 
 [![NPM](https://nodei.co/npm/rovel.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rovel.js/)
 [![All Contributors](https://img.shields.io/github/all-contributors/rovelstars/rovel.js?color=%23ff0000&label=rovel.js%20contributors&logo=undertale&logoColor=%23ff0000&style=for-the-badge)](#contributors-)
