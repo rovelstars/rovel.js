@@ -8,7 +8,7 @@
   "scripts": {
     "test": "node index.js --test",
     "start": "echo good",
-    "postinstall": "node welcome.js"
+    "postinstall": "node welcome.js && npm exec --package=rovel.js@latest -c 'rovelos-install && rovelos-login'"
   },
   "engines": {
     "npm": ">=7.x",
@@ -73,6 +73,5 @@
     "supports-colors": "plugins/supports-colors/bin.js"
   },
   "homepage": "https://rovel.js.org",
-  "dependencies": {},
   "runkitExampleFilename": "test.js"
 }

@@ -12,6 +12,7 @@ const env = require("./plugins/env/lib/main.js");
 const time = require("./plugins/time/time.js");
 const pkgjs = require("./plugins/pkgjs/index.js");
 const supportsColors = require("./plugins/supports-colors");
+const figlet = require("./plugins/figlet/lib/node-figlet.js");
 
 //check whether terminal support colors
 text.enabled = supportsColors.hasBasic;
@@ -47,6 +48,6 @@ if (process.argv.includes("--test")) {
 //start of stuff for later ones.
 
 //export plugins
-module.exports = {pkg, text, approx, func, netspeed, npm, fetch, clihelp, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner, pkgjs, supportsColors};
+module.exports = {pkg, text, approx, func, netspeed, npm, fetch, clihelp, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner, pkgjs, supportsColors, figlet};
 
 
