@@ -8,7 +8,7 @@
   "scripts": {
     "test": "node index.js --test",
     "start": "echo good",
-    "postinstall": "node welcome.js && npm exec --package=rovel.js@latest -c 'rovelos-install && rovelos-login'"
+    "postinstall": "node welcome.js"
   },
   "engines": {
     "npm": ">=7.x",

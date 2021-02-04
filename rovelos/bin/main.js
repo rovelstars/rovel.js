@@ -10,8 +10,8 @@ const fs = require("fs");
 
         function welcome(){
 	clear(isWin);
-	let rovel = require("rovel.js");
-	require("rovel.js/plugins/dotenv").config({path: `${$HOME}/.rosrc`});
+	let rovel = require("../../index.js");
+	rovel.dotenv.config({path: `${$HOME}/.rosrc`});
 	console.log(`Welcome back ${process.env.USERNAME}! Please wait while Rovel OS is starting up...`);
 	
 	setTimeout(function(){
