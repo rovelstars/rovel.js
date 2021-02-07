@@ -11,7 +11,7 @@
     "postinstall": "node welcome.js"
   },
   "engines": {
-    "npm": ">=7.x",
+    "npm": ">=6.x",
     "node": ">=12.x"
   },
   "man": [
@@ -65,13 +65,11 @@
     "url": "https://github.com/rovelstars/rovel.js/issues"
   },
   "bin": {
+    "rovel": "bin.js",
     "rovelos-install": "rovelos/install.js",
     "rovelos-login": "rovelos/bin/main.js",
     "rovelos-logout": "rovelos/bin/out.js",
-    "http-server": "server/http.js",
-    "https-server": "server/https.js",
     "supports-colors": "plugins/supports-colors/bin.js"
   },
-  "homepage": "https://rovel.js.org",
-  "runkitExampleFilename": "test.js"
+  "homepage": "https://rovel.js.org"
 }

@@ -4,7 +4,7 @@ const $ = require('./utils');
 const ALL = '__all__';
 const DEF = '__default__';
 
-class Sade {
+class cli {
 	constructor(name, isOne) {
 		let [bin, ...rest] = name.split(/\s+/);
 		isOne = isOne || rest.length > 0;
@@ -200,4 +200,4 @@ class Sade {
 	}
 }
 
-module.exports = (str, isOne) => new Sade(str, isOne);
+module.exports = (str, isOne) => new cli(str, isOne);

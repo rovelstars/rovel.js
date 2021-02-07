@@ -6,7 +6,7 @@ const func = require("./plugins/functions/index.js");
 const netspeed = require("./plugins/netspeed/app.js");
 const npm = require("./plugins/api-npm/api.js");
 const fetch = require("./plugins/fetch/lib/index.js");
-const clihelp = require("./plugins/clihelp/lib/index.js");
+const cli = require("./plugins/cli/lib/index.js");
 const emoji = require("./plugins/node-emoji/index.js");
 const env = require("./plugins/env/lib/main.js");
 const time = require("./plugins/time/time.js");
@@ -33,10 +33,6 @@ function test(data) {
     if (pkg.version < data['dist-tags'].latest) {
         console.log(text.red.bold(`New update for ROVEL.JS! Please update your version ${pkg.version} with the current version ${data["dist-tags"].latest}!`));
     }
-
-    if (pkg.beta == true && pkg.betabuild > data['dist-tags'].latest) {
-        console.log(text.green.bold(`Thanks for installing the beta update of ROVEL.JS! Please note that beta versions may not work properly, and features given in beta may be removed. So please use this beta for testing purposes. If you find any bugs with beta version, kindly let us know either in github issues or in our discord server!\nStable Release:${data["dist-tags"].latest}\nBeta Version: ${pkg.betabuild}`));
-    }
 }
 
 if (process.argv.includes("--test")) {
@@ -48,6 +44,6 @@ if (process.argv.includes("--test")) {
 //start of stuff for later ones.
 
 //export plugins
-module.exports = {pkg, text, approx, func, netspeed, npm, fetch, clihelp, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner, pkgjs, supportsColors, figlet};
+module.exports = {pkg, text, approx, func, netspeed, npm, fetch, cli, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner, pkgjs, supportsColors, figlet};
 
 
