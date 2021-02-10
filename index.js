@@ -12,7 +12,7 @@ const env = require("./plugins/env/lib/main.js");
 const time = require("./plugins/time/time.js");
 const pkgjs = require("./plugins/pkgjs/index.js");
 const supportsColors = require("./plugins/supports-colors");
-const figlet = require("./plugins/figlet/lib/node-figlet.js");
+const spin = require("./plugins/spin/index.js");
 
 //check whether terminal support colors
 text.enabled = supportsColors.hasBasic;
@@ -21,10 +21,9 @@ text.enabled = supportsColors.hasBasic;
 const {exec} = require("child_process");
 const download = require("./app/download.js");
 const listpost = require("./app/listpost.js");
-const {execapp, execarg} = require("./rovelos/lib/execapp.js");
-const {clear} = require("./rovelos/lib/clear.js");
-const osdata = require("./rovelos/bin/data.js");
-const spinner = require("./rovelos/lib/spin/index.js");
+const {execapp, execarg} = require("./ros/lib/execapp.js");
+const {clear} = require("./ros/lib/clear.js");
+const osdata = require("./ros/bin/data.js");
 
 //check for updates ¯\_(ツ)_/¯
 
@@ -44,6 +43,6 @@ if (process.argv.includes("--test")) {
 //start of stuff for later ones.
 
 //export plugins
-module.exports = {pkg, text, approx, func, netspeed, npm, fetch, cli, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spinner, pkgjs, supportsColors, figlet};
+module.exports = {pkg, text, approx, func, netspeed, npm, fetch, cli, emoji, download, listpost, env, time, exec, execapp, execarg, osdata, clear, spin, pkgjs, supportsColors};
 
 

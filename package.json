@@ -15,7 +15,8 @@
     "node": ">=12.x"
   },
   "man": [
-    "./roveljs.1"
+    "./roveljs.1",
+    "./roveljs.2"
   ],
   "repository": {
     "type": "git",
@@ -65,11 +66,7 @@
     "url": "https://github.com/rovelstars/rovel.js/issues"
   },
   "bin": {
-    "rovel": "bin.js",
-    "rovelos-install": "rovelos/install.js",
-    "rovelos-login": "rovelos/bin/main.js",
-    "rovelos-logout": "rovelos/bin/out.js",
-    "supports-colors": "plugins/supports-colors/bin.js"
+    "rovel": "bin.js"
   },
   "homepage": "https://rovel.js.org"
 }

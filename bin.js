@@ -8,26 +8,14 @@ prog.command('exec <code>').describe('Execute nodejs code in terminal. rovel.js 
 	eval(code);
 });
 
-prog.command('http <file>').describe('A simple http server to serve html files directly from the terminal.').example('http index.html').example('http index.html 8080').action((file)=>{
-	var fs = require('fs'),
-    http = require('http');
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream(file).pipe(res)
-});
-server.listen(process.argv[4] || 3000);
-console.warn(`HTTP-Server listening on ${process.argv[4] || 3000}`);
-});
+prog.command('ms').describe('Show the speed of your terminal in miliseconds').example('ms').action(()=>{
+	while(true){
+console.time('Speed')
 
-prog.command('https <file>').describe('A simple https server to serve html files directly from the terminal.').example('https index.html').example('https index.html 8080').action((file)=>{
-        var fs = require('fs'),
-    https = require('https');
-const server = https.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream(file).pipe(res)
-});
-server.listen(process.argv[4] || 3000);
-console.warn(`HTTPS-Server listening on ${process.argv[4] || 3000}`);
+let i = 0;
+while (i < 1000000) { i ++ }
+console.clear();
+console.timeEnd('Speed')};
 });
 
 prog.parse(process.argv);
