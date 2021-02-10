@@ -9,7 +9,10 @@
 <a href="https://npmjs.com/package/rovel.js"><img src="https://img.shields.io/npm/l/rovel.js?style=for-the-badge" alt="License"></a>
 <img src="https://img.shields.io/tokei/lines/github/rovelstars/rovel.js?logo=github&amp;style=for-the-badge" alt="Lines of code">
 <img src="https://img.shields.io/maintenance/yes/2025?label=rovel.js%20maintained%3F&amp;style=for-the-badge" alt="Maintenance">
-<a href="https://github.com/rovelstars/rovel.js"><img src="https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&amp;logo=github&amp;style=for-the-badge" alt="Build Status"></a></p></div>
+<a href="https://github.com/rovelstars/rovel.js"><img src="https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&amp;logo=github&amp;style=for-the-badge" alt="Build Status"></a></p>
+<p><img src="https://img.shields.io/librariesio/dependents/npm/rovel.js?color=blue&amp;label=used%20by&amp;logo=npm&amp;style=for-the-badge" alt="Dependents (via libraries.io)">
+<img src="https://img.shields.io/node/v/rovel.js?color=green&amp;label=requires%20node.js&amp;logo=node.js&amp;style=for-the-badge" alt="node-current">
+<img src="https://img.shields.io/npm/v/rovel.js?color=green&amp;label=requires%20npm&amp;logo=npm&amp;style=for-the-badge" alt="npm"></p></div>
 
 # How to install beta builds:
 ```bash
