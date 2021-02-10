@@ -1,18 +1,16 @@
-![Logo](https://cdn.discordapp.com/attachments/775220204699385886/800004524718424074/Screenshot_20210116-1940022.png)
+<div align="center"><p><img src="https://cdn.discordapp.com/attachments/775220204699385886/800004524718424074/Screenshot_20210116-1940022.png" alt="Logo"></p>
+<p><a href="https://npmjs.com/package/rovel.js"><img src="https://img.shields.io/static/v1?label=rovel&amp;message=js&amp;color=red&amp;style=for-the-badge&amp;logo=npm" alt="Rovel.js"></a></p>
+<p><a href="https://nodei.co/npm/rovel.js/"><img src="https://nodei.co/npm/rovel.js.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
+<p><a href="#contributors-"><img src="https://img.shields.io/github/all-contributors/rovelstars/rovel.js?color=%23ff0000&amp;label=rovel.js%20contributors&amp;logo=undertale&amp;logoColor=%23ff0000&amp;style=for-the-badge" alt="All Contributors"></a>
+<img src="https://img.shields.io/snyk/vulnerabilities/npm/rovel.js?logo=awesome%20lists&amp;logoColor=white&amp;style=for-the-badge" alt="Snyk Vulnerabilities for npm package">
+<a href="https://discord.gg/953XCpHbKF"><img src="https://img.shields.io/discord/602906543356379156?color=%237289da&amp;label=chat%20with%20us&amp;logo=discord&amp;style=for-the-badge" alt="Discord"></a>
+<a href="https://npmjs.com/package/rovel.js"><img src="https://img.shields.io/npm/v/rovel.js?color=red&amp;label=rovel.js&amp;style=for-the-badge" alt="Version"></a>
+<a href="https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.9.tgz"><img src="https://img.shields.io/npm/dm/rovel.js?color=red&amp;label=rovel.js%20downloads&amp;logo=npm&amp;style=for-the-badge" alt="Downloads"></a>
+<a href="https://npmjs.com/package/rovel.js"><img src="https://img.shields.io/npm/l/rovel.js?style=for-the-badge" alt="License"></a>
+<img src="https://img.shields.io/tokei/lines/github/rovelstars/rovel.js?logo=github&amp;style=for-the-badge" alt="Lines of code">
+<img src="https://img.shields.io/maintenance/yes/2025?label=rovel.js%20maintained%3F&amp;style=for-the-badge" alt="Maintenance">
+<a href="https://github.com/rovelstars/rovel.js"><img src="https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&amp;logo=github&amp;style=for-the-badge" alt="Build Status"></a></p></div>
 
-[![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js)
-
-[![NPM](https://nodei.co/npm/rovel.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rovel.js/)
-
-[![All Contributors](https://img.shields.io/github/all-contributors/rovelstars/rovel.js?color=%23ff0000&label=rovel.js%20contributors&logo=undertale&logoColor=%23ff0000&style=for-the-badge)](#contributors-)
-![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/rovel.js?logo=awesome%20lists&logoColor=white&style=for-the-badge)
-[![Discord](https://img.shields.io/discord/602906543356379156?color=%237289da&label=chat%20with%20us&logo=discord&style=for-the-badge)](https://discord.gg/953XCpHbKF)
-[![Version](https://img.shields.io/npm/v/rovel.js?color=red&label=rovel.js&style=for-the-badge)](https://npmjs.com/package/rovel.js)
-[![Downloads](https://img.shields.io/npm/dm/rovel.js?color=red&label=rovel.js%20downloads&logo=npm&style=for-the-badge)](https://registry.npmjs.org/rovel.js/-/rovel.js-1.1.9.tgz)
-[![License](https://img.shields.io/npm/l/rovel.js?style=for-the-badge)](https://npmjs.com/package/rovel.js)
-![Lines of code](https://img.shields.io/tokei/lines/github/rovelstars/rovel.js?logo=github&style=for-the-badge)
-![Maintenance](https://img.shields.io/maintenance/yes/2025?label=rovel.js%20maintained%3F&style=for-the-badge)
-[![Build Status](https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&logo=github&style=for-the-badge)](https://github.com/rovelstars/rovel.js)
 # How to install beta builds:
 ```bash
 $ npm i rovelstars/rovel.js#master
@@ -44,3 +42,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
