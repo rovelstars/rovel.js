@@ -1,5 +1,3 @@
-<p align="center">
-
 ![Logo](https://cdn.discordapp.com/attachments/775220204699385886/800004524718424074/Screenshot_20210116-1940022.png)
 
 [![Rovel.js](https://img.shields.io/static/v1?label=rovel&message=js&color=red&style=for-the-badge&logo=npm)](https://npmjs.com/package/rovel.js)
@@ -15,7 +13,6 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/rovelstars/rovel.js?logo=github&style=for-the-badge)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=rovel.js%20maintained%3F&style=for-the-badge)
 [![Build Status](https://img.shields.io/github/workflow/status/sayantan300/rovel.js/Node.js%20CI?label=nodejs%20build&logo=github&style=for-the-badge)](https://github.com/rovelstars/rovel.js)
-</p>
 # How to install beta builds:
 ```bash
 $ npm i rovelstars/rovel.js#master
