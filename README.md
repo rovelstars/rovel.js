@@ -18,7 +18,7 @@
 ```bash
 $ npm i rovelstars/rovel.js#master
 ```
-If you successfully installed beta version, an thank you message will popup after installing it.
+If you successfully installed beta version, a thank you message will popup after installing it.
 
 # What's New?
 We added an cli for rovel.js! Also we worked on Rovel OS quite a bit, so it looks great now!
